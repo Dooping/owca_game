@@ -40,7 +40,7 @@ public class ObstacleSpawner : MonoBehaviour
 
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(minY, maxY);
-        Instantiate(obstacle, transform.position + new Vector3(randomX, randomY, 0), transform.rotation);
+        Instantiate(obstacle, transform.position + new Vector3(randomX, randomY, -2), transform.rotation);
         
         obstacleCounter++;
     }
