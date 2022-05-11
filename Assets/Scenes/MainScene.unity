@@ -152,7 +152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afbbf87a9508dd4c8df1339edef28ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 3797721913963260554, guid: 078a3f220f7045a4ebd357e19868d9bd, type: 3}
+  possibleObstacles:
+  - {fileID: 1162234897618601141, guid: ecd0f9105634b57458f175217ddbdad5, type: 3}
+  - {fileID: 7587465295560065819, guid: bf9abb9d81c2ea84ca921fad10ea12e6, type: 3}
+  - {fileID: 3655865595103474855, guid: 3106b85c61f199c4c8718ad15f52bf03, type: 3}
+  possibleSpecialObstacles:
+  - {fileID: 2127382302909658001, guid: 730698de2fb7d51409e02bba1e6293bf, type: 3}
+  - {fileID: 3797721913963260554, guid: 078a3f220f7045a4ebd357e19868d9bd, type: 3}
   minX: 12
   maxX: 20
   minY: -3.6

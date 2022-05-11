@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ObstacleMovement : MonoBehaviour
 {
-    public int minRange;
-    public int maxRange;
+    public int minRange = 20;
+    public int maxRange = 100;
     public float speed = 150;
 
     private Rigidbody2D body;
