@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 
     public GameObject explosionBoom;
     public GameObject explosionRock;
+    public int lovePerHeart = 1000;
 
     [SerializeField]
     private Value lives;
@@ -37,7 +38,7 @@ public class Player : MonoBehaviour
         } else if (collision.tag == "Point")
         {
             Destroy(collision.gameObject);
-            points.value += 100;
+            points.value += lovePerHeart;
         }
     }
 
