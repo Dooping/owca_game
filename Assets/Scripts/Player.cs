@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+
+    public GameObject explosionBoom;
+    public GameObject explosionRock;
+
     [SerializeField]
     private Value lives;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +21,9 @@ public class Player : MonoBehaviour
     {
         if (collision.tag == "Obstacle")
         {
+            Instantiate(explosionRock, collision.gameObject.transform.position, transform.rotation);
+            Instantiate(explosionBoom, this.gameObject.transform.position, transform.rotation);
+
             lives.value--;
             Destroy(collision.gameObject);
 

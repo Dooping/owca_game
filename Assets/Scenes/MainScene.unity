@@ -1459,4 +1459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e586f167f069354083cecc7cdcddcd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionBoom: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56, type: 3}
+  explosionRock: {fileID: 1040608886635896, guid: a97415c6b57076f41a6621a7b51d63a3, type: 3}
   lives: {fileID: 11400000, guid: 9a6e596e3da4385439b4b8f13271198b, type: 2}
