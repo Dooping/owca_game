@@ -6,10 +6,14 @@ public class Player : MonoBehaviour
 {
     [SerializeField]
     private Value lives;
+
+    [SerializeField]
+    private Value points;
     // Start is called before the first frame update
     void Start()
     {
-        
+        lives.value = 5;
+        points.value = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -23,6 +27,10 @@ public class Player : MonoBehaviour
             {
                 Destroy(this.gameObject);
             }
+        } else if (collision.tag == "Point")
+        {
+            Destroy(collision.gameObject);
+            points.value += 100;
         }
     }
 
