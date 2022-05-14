@@ -12,7 +12,6 @@ public class PauseControl : MonoBehaviour
     private void Awake()
     {
         Time.timeScale = 1;
-        AudioListener.pause = false;
     }
     void Update()
     {
@@ -33,13 +32,11 @@ public class PauseControl : MonoBehaviour
         if (gameIsPaused)
         {
             Time.timeScale = 0f;
-            AudioListener.pause = true;
             menu.SetActive(true);
         }
         else
         {
             Time.timeScale = 1;
-            AudioListener.pause = false;
             menu.SetActive(false);
         }
     }
