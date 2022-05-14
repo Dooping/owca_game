@@ -20,6 +20,6 @@ public class PlayerMovement : MonoBehaviour
     {
         vertical = Input.GetAxisRaw("Vertical");
         horizontal = Input.GetAxisRaw("Horizontal");
-        body.velocity = new Vector2(horizontal * Time.deltaTime * speed, vertical * Time.deltaTime * speed);
+        body.velocity = new Vector2(horizontal * speed, vertical * speed);
     }
 }
