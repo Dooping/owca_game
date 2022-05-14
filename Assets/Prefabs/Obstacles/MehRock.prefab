@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1387713705160624430}
   - component: {fileID: 3905576850547762841}
   - component: {fileID: 4523048627458203425}
-  - component: {fileID: -250065425820240963}
+  - component: {fileID: 6603696189556901413}
   m_Layer: 0
   m_Name: MehRock
   m_TagString: Obstacle
@@ -952,7 +952,7 @@ CompositeCollider2D:
       - {x: 1.4819156, y: -0.3285964}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
---- !u!114 &-250065425820240963
+--- !u!114 &6603696189556901413
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -961,6 +961,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3655865595103474855}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a456d780d401614ab60f64cf335bb3e, type: 3}
+  m_Script: {fileID: 11500000, guid: 541386f614bd2f046b101c252da76532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

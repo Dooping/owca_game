@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2056349861241104832}
   - component: {fileID: 3819076540269446071}
   - component: {fileID: 2307047067704044316}
-  - component: {fileID: 7698327571700409422}
+  - component: {fileID: 8206675496820706467}
   m_Layer: 0
   m_Name: AnotherRock
   m_TagString: Obstacle
@@ -758,7 +758,7 @@ CompositeCollider2D:
       - {x: -1.0010097, y: 0.48737812}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
---- !u!114 &7698327571700409422
+--- !u!114 &8206675496820706467
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -767,6 +767,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7587465295560065819}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a456d780d401614ab60f64cf335bb3e, type: 3}
+  m_Script: {fileID: 11500000, guid: 541386f614bd2f046b101c252da76532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

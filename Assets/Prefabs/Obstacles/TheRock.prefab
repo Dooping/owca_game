@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3797721913963260555}
   - component: {fileID: 3413962229859354319}
   - component: {fileID: 4641305829128153218}
-  - component: {fileID: 9050800502946800990}
+  - component: {fileID: 809779430687047441}
   m_Layer: 0
   m_Name: TheRock
   m_TagString: Obstacle
@@ -711,7 +711,7 @@ CompositeCollider2D:
       - {x: -0.5358399, y: -0.4412932}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
---- !u!114 &9050800502946800990
+--- !u!114 &809779430687047441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -720,6 +720,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3797721913963260554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a456d780d401614ab60f64cf335bb3e, type: 3}
+  m_Script: {fileID: 11500000, guid: 541386f614bd2f046b101c252da76532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
