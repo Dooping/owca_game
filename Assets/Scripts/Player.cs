@@ -7,6 +7,11 @@ public class Player : MonoBehaviour
 
     public GameObject explosionBoom;
     public GameObject explosionRock;
+
+    public AudioSource owcaDying;
+    public AudioSource explosion;
+    public AudioSource collect;
+
     public int lovePerHeart = 1000;
 
     [SerializeField]
@@ -25,19 +30,24 @@ public class Player : MonoBehaviour
     {
         if (collision.tag == "Obstacle")
         {
+            Destroy(collision.gameObject);
             Instantiate(explosionRock, collision.gameObject.transform.position, transform.rotation);
             Instantiate(explosionBoom, this.gameObject.transform.position, transform.rotation);
+            owcaDying.Play();
+            explosion.Play();
 
             lives.value--;
-            Destroy(collision.gameObject);
 
             if (lives.value == 0)
             {
                 Destroy(this.gameObject);
             }
-        } else if (collision.tag == "Point")
+        } 
+        else if (collision.tag == "Point")
         {
             Destroy(collision.gameObject);
+            collect.Play();
+
             points.value += lovePerHeart;
         }
     }
