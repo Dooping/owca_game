@@ -282,7 +282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102066651}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.26426223, y: 0.3511928, z: -9.94929}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3155,6 +3155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionBoom: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56, type: 3}
   explosionRock: {fileID: 1040608886635896, guid: a97415c6b57076f41a6621a7b51d63a3, type: 3}
+  explosionLove: {fileID: 100004, guid: 3af6f68141914ca43ba39b2403757bd0, type: 3}
   owcaDying: {fileID: 467453004}
   explosion: {fileID: 284940746}
   collect: {fileID: 102066653}
