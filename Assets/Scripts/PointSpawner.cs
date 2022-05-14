@@ -11,6 +11,10 @@ public class PointSpawner : MonoBehaviour
     public float maxY;
     public float timeBetweenSpawn;
     private float spawnTime;
+
+    [SerializeField]
+    private Value lives;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +38,7 @@ public class PointSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > spawnTime)
+        if (lives.value != 0 && Time.time > spawnTime)
         {
             Spawn();
             spawnTime = Time.time + timeBetweenSpawn;

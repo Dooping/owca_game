@@ -16,6 +16,9 @@ public class ObstacleSpawner : MonoBehaviour
     private int obstacleCounter = 0;
     private List<GameObject> allPossibleObstacles;
 
+    [SerializeField]
+    private Value lives;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +30,7 @@ public class ObstacleSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > spawnTime)
+        if (lives.value != 0 && Time.time > spawnTime)
         {
             Spawn();
             spawnTime = Time.time + timeBetweenSpawn;

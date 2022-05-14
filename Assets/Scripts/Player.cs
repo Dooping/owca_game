@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    public GameObject victoryMenu;
     public GameObject explosionBoom;
     public GameObject explosionRock;
     public GameObject explosionLove;
@@ -42,6 +42,7 @@ public class Player : MonoBehaviour
             if (lives.value == 0)
             {
                 Destroy(this.gameObject);
+                victoryMenu.SetActive(true);
             }
         } 
         else if (collision.tag == "Point")
