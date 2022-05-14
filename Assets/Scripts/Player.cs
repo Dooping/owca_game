@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 
     public GameObject explosionBoom;
     public GameObject explosionRock;
+    public GameObject explosionLove;
 
     public AudioSource owcaDying;
     public AudioSource explosion;
@@ -46,6 +47,7 @@ public class Player : MonoBehaviour
         else if (collision.tag == "Point")
         {
             Destroy(collision.gameObject);
+            Instantiate(explosionLove, collision.gameObject.transform.position, transform.rotation);
             collect.Play();
 
             points.value += lovePerHeart;
