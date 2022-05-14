@@ -1461,5 +1461,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionBoom: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56, type: 3}
   explosionRock: {fileID: 1040608886635896, guid: a97415c6b57076f41a6621a7b51d63a3, type: 3}
+  lovePerHeart: 1000
   lives: {fileID: 11400000, guid: 9a6e596e3da4385439b4b8f13271198b, type: 2}
   points: {fileID: 11400000, guid: b536672090a137e4face5f9b9f5dc8a8, type: 2}
