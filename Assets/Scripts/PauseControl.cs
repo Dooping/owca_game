@@ -12,6 +12,7 @@ public class PauseControl : MonoBehaviour
     private void Awake()
     {
         Time.timeScale = 1;
+        gameIsPaused = false;
     }
     void Update()
     {
