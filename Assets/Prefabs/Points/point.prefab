@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 240751988625006841}
   - component: {fileID: -4406665976395445350}
   - component: {fileID: 3399621042475626201}
+  - component: {fileID: 8816423401506701537}
   m_Layer: 0
   m_Name: point
   m_TagString: Point
@@ -502,3 +503,15 @@ PolygonCollider2D:
       - {x: 0.14999999, y: -2.81}
       - {x: 0.29, y: -2.71}
       - {x: 0.37, y: -2.6499999}
+--- !u!114 &8816423401506701537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240751988625006821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 541386f614bd2f046b101c252da76532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

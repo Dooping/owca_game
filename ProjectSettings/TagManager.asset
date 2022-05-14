@@ -8,6 +8,7 @@ TagManager:
   - Border
   - Point
   - FxTemporaire
+  - AssetKiller
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7228698845092976873}
   - component: {fileID: 3677688483544256216}
   - component: {fileID: 1210290065423778749}
-  - component: {fileID: 1814596763844366688}
+  - component: {fileID: 6444030186245060423}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Obstacle
@@ -456,7 +456,7 @@ CompositeCollider2D:
       - {x: -1.2236302, y: -0.6498739}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
---- !u!114 &1814596763844366688
+--- !u!114 &6444030186245060423
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -465,6 +465,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1162234897618601141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a456d780d401614ab60f64cf335bb3e, type: 3}
+  m_Script: {fileID: 11500000, guid: 541386f614bd2f046b101c252da76532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
