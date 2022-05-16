@@ -11,13 +11,17 @@ public class ObstacleSpawner : MonoBehaviour
     public float maxX;
     public float minY;
     public float maxY;
-    public float timeBetweenSpawn;
-    private float spawnTime;
+    public float maxTimeBetweenSpawn = 3.5f;
+    public float minTimeBetweenSpawn = 1.5f;
+    private float deltaTimeBetweenExtremes;
+    private double spawnTime;
     private int obstacleCounter = 0;
     private List<GameObject> allPossibleObstacles;
 
     [SerializeField]
     private Value lives;
+    [SerializeField]
+    private Value difficulty;
 
     // Start is called before the first frame update
     void Start()
@@ -25,16 +29,27 @@ public class ObstacleSpawner : MonoBehaviour
         allPossibleObstacles = new List<GameObject>();
         allPossibleObstacles.AddRange(possibleObstacles);
         allPossibleObstacles.AddRange(possibleSpecialObstacles);
+        difficulty.value = 0;
+        deltaTimeBetweenExtremes = maxTimeBetweenSpawn - minTimeBetweenSpawn;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (lives.value != 0 && Time.time > spawnTime)
+        if (lives.value != 0 && Time.timeAsDouble > spawnTime)
         {
             Spawn();
-            spawnTime = Time.time + timeBetweenSpawn;
+            if (difficulty.value < 100)
+            {
+                difficulty.value++;
+            }
+            CalculateNewSpawnTime();
         }
+    }
+
+    private void CalculateNewSpawnTime()
+    {
+        spawnTime = Time.timeAsDouble + deltaTimeBetweenExtremes - (deltaTimeBetweenExtremes * difficulty.value / 100) + minTimeBetweenSpawn;
     }
 
     void Spawn()
