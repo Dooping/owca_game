@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3819076540269446071}
   - component: {fileID: 2307047067704044316}
   - component: {fileID: 8206675496820706467}
+  - component: {fileID: 4504607401426617834}
   m_Layer: 0
   m_Name: AnotherRock
   m_TagString: Obstacle
@@ -770,3 +771,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 541386f614bd2f046b101c252da76532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4504607401426617834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7587465295560065819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8765ec061a3314c89b64082efae176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 3

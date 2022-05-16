@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4262392028108523982}
   - component: {fileID: 3341055412252084700}
   - component: {fileID: 4374286433614916803}
+  - component: {fileID: 7871166900230090485}
   m_Layer: 0
   m_Name: EyesRock
   m_TagString: Obstacle
@@ -1250,3 +1251,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 541386f614bd2f046b101c252da76532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7871166900230090485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127382302909658001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8765ec061a3314c89b64082efae176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 3

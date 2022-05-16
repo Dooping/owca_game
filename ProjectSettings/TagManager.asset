@@ -9,6 +9,7 @@ TagManager:
   - Point
   - FxTemporaire
   - AssetKiller
+  - Projectile
   layers:
   - Default
   - TransparentFX
