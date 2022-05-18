@@ -183,10 +183,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackgroundMusic
       objectReference: {fileID: 0}
+    - target: {fileID: 4715438322615334207, guid: 1fc087a6b52ba9145a6e2c17b3010608, type: 3}
+      propertyPath: difficulty
+      value: 
+      objectReference: {fileID: 11400000, guid: 5434c9baa9d91814ba0873d18c69bcec, type: 2}
+    - target: {fileID: 4715438322615334207, guid: 1fc087a6b52ba9145a6e2c17b3010608, type: 3}
+      propertyPath: clips.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715438322615334207, guid: 1fc087a6b52ba9145a6e2c17b3010608, type: 3}
+      propertyPath: clips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: efae7077c9565e342b63e99597c7137e, type: 3}
+    - target: {fileID: 4715438322615334207, guid: 1fc087a6b52ba9145a6e2c17b3010608, type: 3}
+      propertyPath: clips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e0978d069a560534a81b044958f7faeb, type: 3}
+    - target: {fileID: 4715438322615334207, guid: 1fc087a6b52ba9145a6e2c17b3010608, type: 3}
+      propertyPath: clips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: ca73991b8a3cbb043b2a06803bee627f, type: 3}
+    - target: {fileID: 4715438322615334207, guid: 1fc087a6b52ba9145a6e2c17b3010608, type: 3}
+      propertyPath: clips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 93ec16065eebe9f4dbbc7dd4cb28978e, type: 3}
+    - target: {fileID: 6252999439508033669, guid: 1fc087a6b52ba9145a6e2c17b3010608, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6252999439508033669, guid: 1fc087a6b52ba9145a6e2c17b3010608, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: e95061127ae228f4398c9c92e17d0607, type: 3}
+    - target: {fileID: 6252999439508033669, guid: 1fc087a6b52ba9145a6e2c17b3010608, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fc087a6b52ba9145a6e2c17b3010608, type: 3}
 --- !u!224 &383104583 stripped
