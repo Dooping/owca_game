@@ -10,6 +10,8 @@ TagManager:
   - FxTemporaire
   - AssetKiller
   - Projectile
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX

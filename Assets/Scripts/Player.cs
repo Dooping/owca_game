@@ -8,10 +8,14 @@ public class Player : MonoBehaviour
     public GameObject explosionBoom;
     public GameObject explosionRock;
     public GameObject explosionLove;
+    public GameObject explosionUnicorn;
+    public GameObject explosionFire;
 
     public AudioSource owcaDying;
     public AudioSource explosion;
     public AudioSource collect;
+    public AudioSource unicornDying;
+    public AudioSource burn;
 
     public int lovePerHeart = 1000;
 
@@ -33,18 +37,26 @@ public class Player : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Instantiate(explosionRock, collision.gameObject.transform.position, transform.rotation);
-            Instantiate(explosionBoom, this.gameObject.transform.position, transform.rotation);
-            owcaDying.Play();
             explosion.Play();
-
-            lives.value--;
-
-            if (lives.value == 0)
-            {
-                Destroy(this.gameObject);
-                victoryMenu.SetActive(true);
-            }
+            
+            HitPlayer();
         } 
+        else if (collision.tag == "Enemy")
+        {
+            Destroy(collision.gameObject);
+            Instantiate(explosionUnicorn, collision.gameObject.transform.position, transform.rotation);
+            unicornDying.Play();
+
+            HitPlayer();
+        }
+        else if (collision.tag == "Bullet")
+        {
+            Destroy(collision.gameObject);
+            Instantiate(explosionFire, collision.gameObject.transform.position, transform.rotation);
+            burn.Play();
+
+            HitPlayer();
+        }
         else if (collision.tag == "Point")
         {
             Destroy(collision.gameObject);
@@ -52,6 +64,20 @@ public class Player : MonoBehaviour
             collect.Play();
 
             points.value += lovePerHeart;
+        }
+    }
+
+    void HitPlayer()
+    {
+        Instantiate(explosionBoom, this.gameObject.transform.position, transform.rotation);
+        owcaDying.Play();
+
+        lives.value--;
+
+        if (lives.value == 0)
+        {
+            Destroy(this.gameObject);
+            victoryMenu.SetActive(true);
         }
     }
 
