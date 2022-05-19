@@ -45,7 +45,7 @@ public class SoundController : MonoBehaviour
     }
     public void PlayHappyBirthday()
     {
-        happyBirthday.Play();
+        happyBirthday.PlayDelayed(1f);
     }
 
 }
