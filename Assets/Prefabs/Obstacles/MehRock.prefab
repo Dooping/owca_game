@@ -978,3 +978,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
+  animationAvocado: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
+  animationObstacle: {fileID: 1040608886635896, guid: a97415c6b57076f41a6621a7b51d63a3, type: 3}

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7912081371327254519}
   - component: {fileID: 7029323806055207445}
   - component: {fileID: 2684141688971127313}
+  - component: {fileID: -6109581901238471270}
   m_Layer: 0
   m_Name: Unicorn
   m_TagString: Enemy
@@ -3226,6 +3227,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 541386f614bd2f046b101c252da76532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6109581901238471270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4804433588203630609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8765ec061a3314c89b64082efae176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 1
+  animationAvocado: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
+  animationObstacle: {fileID: 100018, guid: a40b64bf23366dc42a892af2c6ff6140, type: 3}
 --- !u!1 &7029323807271279856
 GameObject:
   m_ObjectHideFlags: 0

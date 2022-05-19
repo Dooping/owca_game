@@ -784,3 +784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
+  audioSourceAvocado: {fileID: 4149462122193776595, guid: fe0119274d944314087f44494aec78e1, type: 3}
+  audioSourceObstacle: {fileID: 889874596849935465, guid: c1b2394ca2c24444fbffd5832cea17f7, type: 3}
+  animationAvocado: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
+  animationObstacle: {fileID: 1040608886635896, guid: a97415c6b57076f41a6621a7b51d63a3, type: 3}

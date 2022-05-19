@@ -11,11 +11,8 @@ public class Player : MonoBehaviour
     public GameObject explosionUnicorn;
     public GameObject explosionFire;
 
-    public AudioSource owcaDying;
-    public AudioSource explosion;
-    public AudioSource collect;
-    public AudioSource unicornDying;
-    public AudioSource burn;
+    public GameObject sounds;
+    private SoundController soundController;
 
     public int lovePerHeart = 1000;
 
@@ -29,6 +26,7 @@ public class Player : MonoBehaviour
     {
         lives.value = 5;
         points.value = 0;
+        soundController = sounds.GetComponent<SoundController>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,7 +35,7 @@ public class Player : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Instantiate(explosionRock, collision.gameObject.transform.position, transform.rotation);
-            explosion.Play();
+            soundController.PlayExplosion();
             
             HitPlayer();
         } 
@@ -45,7 +43,7 @@ public class Player : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Instantiate(explosionUnicorn, collision.gameObject.transform.position, transform.rotation);
-            unicornDying.Play();
+            soundController.PlayUnicornDying();
 
             HitPlayer();
         }
@@ -53,7 +51,7 @@ public class Player : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Instantiate(explosionFire, collision.gameObject.transform.position, transform.rotation);
-            burn.Play();
+            soundController.PlayBurn();
 
             HitPlayer();
         }
@@ -61,7 +59,7 @@ public class Player : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Instantiate(explosionLove, collision.gameObject.transform.position, transform.rotation);
-            collect.Play();
+            soundController.PlayCollect();
 
             points.value += lovePerHeart;
         }
@@ -70,7 +68,7 @@ public class Player : MonoBehaviour
     void HitPlayer()
     {
         Instantiate(explosionBoom, this.gameObject.transform.position, transform.rotation);
-        owcaDying.Play();
+        soundController.PlayOwcaDying();
 
         lives.value--;
 
@@ -78,6 +76,7 @@ public class Player : MonoBehaviour
         {
             Destroy(this.gameObject);
             victoryMenu.SetActive(true);
+            soundController.PlayHappyBirthday();
         }
     }
 
