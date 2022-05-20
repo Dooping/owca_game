@@ -12,6 +12,8 @@ public class BackgroundMusic : MonoBehaviour
     [SerializeField]
     private List<AudioClip> clips;
 
+    public int numberOfRepetitions = 2;
+
     private IEnumerator musicRoutine;
     private AudioSource audioSource;
 
@@ -41,11 +43,11 @@ public class BackgroundMusic : MonoBehaviour
         {
             if (difficulty.value == 0)
             {
-                clipIndex = loopCount / clips.Count;
-                loopCount = (loopCount + 1) % (4 * clips.Count);
+                clipIndex = loopCount / numberOfRepetitions;
+                loopCount = (loopCount + 1) % (numberOfRepetitions * clips.Count);
             } else if (difficulty.value < 100)
             {
-                clipIndex = difficulty.value / 25;
+                clipIndex = Mathf.Min(clips.Count-1, difficulty.value / 25);
             }
             audioSource.clip = clips[clipIndex];
             audioSource.Play();
