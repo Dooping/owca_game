@@ -21,7 +21,7 @@ public class UnicornSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lives.value != 0 && difficulty.value > 7 && Time.time > spawnTime)
+        if (lives.value != 0 && difficulty.value >=25 && Time.time > spawnTime)
         {
             Spawn();
             spawnTime = Time.time + timeBetweenSpawn;

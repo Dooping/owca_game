@@ -2259,7 +2259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -253, y: -31}
+  m_AnchoredPosition: {x: -283, y: -31}
   m_SizeDelta: {x: 75.12683, y: 31.710999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1299579550
@@ -2335,7 +2335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -126, y: -31}
+  m_AnchoredPosition: {x: -156.00003, y: -31}
   m_SizeDelta: {x: 49.676086, y: 49.6761}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1332381242
@@ -2462,7 +2462,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3014476993830490960, guid: 10104f248c2a23443a3dc9ad7903f2ce, type: 3}
       propertyPath: m_text
-      value: Points collected
+      value: Love collected
       objectReference: {fileID: 0}
     - target: {fileID: 3014476993830490960, guid: 10104f248c2a23443a3dc9ad7903f2ce, type: 3}
       propertyPath: m_fontSize
@@ -2877,7 +2877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -181, y: -28}
+  m_AnchoredPosition: {x: -211.00003, y: -28}
   m_SizeDelta: {x: 30, y: 33.531998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1823376598
@@ -3712,7 +3712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -46, y: -28}
+  m_AnchoredPosition: {x: -76.00003, y: -28}
   m_SizeDelta: {x: 80, y: 33.531998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2119193052
@@ -3798,7 +3798,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 1.4970703, w: 0}
+  m_margin: {x: 0, y: 0, z: -30.661633, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
