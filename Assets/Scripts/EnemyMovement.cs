@@ -25,12 +25,10 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player != null && difficulty.value >= 25)
+        if (player != null && difficulty.value >= 75)
         {
-            float step = speedY * Time.deltaTime;
             Vector3 newYPos = transform.position - player.transform.position;
 
-            // move sprite towards the target location
             if (newYPos.y > 0.05)
                 transform.position += Vector3.down * speedY * Time.deltaTime;
             else if (newYPos.y < -0.05)
