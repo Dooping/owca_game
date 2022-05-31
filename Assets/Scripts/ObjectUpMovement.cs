@@ -13,6 +13,6 @@ public class ObjectUpMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         body.AddForce(Vector2.up * speed);
 
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 4f);
     }
 }
