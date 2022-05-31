@@ -19,10 +19,23 @@ public class GunScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && Time.timeAsDouble > timeOfNextShot)
+        if ((Input.GetKeyDown(KeyCode.Space) || TouchHappened()) && Time.timeAsDouble > timeOfNextShot)
         {
             Instantiate(projectile, spawnPoint.transform.position, transform.rotation);
             timeOfNextShot = Time.timeAsDouble + minTimeBetweenShots;
         }
+    }
+
+    private bool TouchHappened()
+    {
+        foreach (Touch touch in Input.touches)
+        {
+            if (touch.phase == TouchPhase.Began)
+            {
+                return true;
+            } 
+        }
+
+        return false;
     }
 }
