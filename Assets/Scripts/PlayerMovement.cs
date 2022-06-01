@@ -23,8 +23,9 @@ public class PlayerMovement : MonoBehaviour
         
         if (deviceType == DeviceType.Handheld)
         {
-            vertical = Input.acceleration.x;
-            horizontal = Input.acceleration.y;
+            Vector3 acc = Quaternion.AngleAxis(90, Vector3.right) * Input.acceleration;
+            vertical = acc.y * 2;
+            horizontal = acc.x * 2;
         } else
         {
             vertical = Input.GetAxisRaw("Vertical");

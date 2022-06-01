@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public GameObject victoryMenu;
+    public GameObject heartSpawner;
     public GameObject explosionBoom;
     public GameObject explosionRock;
     public GameObject explosionLove;
@@ -76,6 +77,7 @@ public class Player : MonoBehaviour
         {
             Destroy(this.gameObject);
             victoryMenu.SetActive(true);
+            heartSpawner.SetActive(true);
             soundController.PlayHappyBirthday();
         }
     }
